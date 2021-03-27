@@ -12,7 +12,13 @@ The first exercise is an exercise that is common to all the programming language
 
 The goal is to get the message `Hello World!` whenever the bash script is executed.
 
-The solution can be found on the `HelloWorld` folder.
+Basically, is must perform according to the next example:
+`````
+BashScriptExercises % ./hello_world.sh
+Hello World!
+`````
+
+**Note:** The solution can be found on the `HelloWorld` folder.
 
 #### &nbsp;&nbsp;&nbsp;&nbsp; **2. Remove old files**
 
@@ -20,4 +26,63 @@ The goal of the second exercise is to built a bash script that receives two inpu
 -  `retention_period`: an integer correspondent to the number of days that the folders should be kept;
 - `directory`: a target local directory that should be analyse with the intention of spot out-dated folders.
 
-The solution can be found in the `RemoveOldFiles` folder.
+Basically, is must perform according to the next example (at 26th March):
+````
+BashScriptExercises % ll
+drwxr-xr-x  2 jnisa  staff  64 Mar 25 12:00 old
+drwxr-xr-x  2 jnisa  staff  64 Mar 24 12:00 oldest
+drwxr-xr-x  2 jnisa  staff  64 Mar 26 12:00 today
+BashScriptExercises % ./remove_old_files.sh 2 /files
+BashScriptExercises % ll
+drwxr-xr-x  2 jnisa  staff  64 Mar 25 12:00 old
+drwxr-xr-x  2 jnisa  staff  64 Mar 26 12:00 today
+````
+
+**Note:** The solution can be found in the `RemoveOldFiles` folder.
+
+#### &nbsp;&nbsp;&nbsp;&nbsp; **3. Is Integer**
+
+The objective of this exercise is to create a bash script that receives any type of variable as an input and then validates whether the variables received is or isn't a `integer`.
+
+Basically, it must perform according to the next example:
+````
+BashScriptExercises % ./is_integer 1
+Received variable: 1
+The variable received is an integer!
+
+BashScriptExercises % ./is_integer a
+Received variable: a
+Error: The input variable must be a integer!"
+`````
+**Note:** The solution can be found the `IsInteger` file.
+
+#### &nbsp;&nbsp;&nbsp;&nbsp; **4. Is Even**
+
+The intention of this exercise is to create a bash script that validates whether the input variables is or isn't a odd number.
+
+The script must act according to the next example:
+`````
+BashScriptExercises % ./is_even.sh 2
+True
+
+BashScriptExercises % ./is_even.sh 1
+False
+`````
+
+### **Notes**
+
+#### &nbsp;&nbsp;&nbsp;&nbsp; **a. Comparisons**
+
+To compare two variables directly in the terminal you can do the following:
+`````
+BashScriptExercises % echo $(( 1 == 2 ))
+0
+
+BashScriptExercises % echo $(( a == a ))
+1
+`````
+Where `0` corresponds to the boolean value `False` and `1` corresponds to `True`.
+
+___
+
+Test Beatriz
