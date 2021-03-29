@@ -54,7 +54,7 @@ BashScriptExercises % ./is_integer a
 Received variable: a
 Error: The input variable must be a integer!"
 `````
-**Note:** The solution can be found the `IsInteger` file.
+**Note:** The solution can be found in the `IsInteger` file.
 
 #### &nbsp;&nbsp;&nbsp;&nbsp; **4. Is Even**
 
@@ -67,6 +67,24 @@ True
 
 BashScriptExercises % ./is_even.sh 1
 False
+`````
+
+**Note:** The solution can be found in the `IsEven` folder.
+
+#### &nbsp;&nbsp;&nbsp;&nbsp; **5. Pick the Even Numbers**
+
+Here the goal is to select the even numbers among multiple numbers that will be in an array (which will be the input variable to this bash script).
+
+The solution must comprise the following steps:
+1. Guarantee that each index of the input array comprises a integer variable;
+2. Validate that each element of the array is a even number;
+3. The script must return the array with even numbers only.
+
+Example of what was stated above:
+`````
+BashScriptExercises % inputArray=(1 2 3 4 5 6)
+BashScriptExercises % ./pick_even.sh $inputArray
+(2 4 6)
 `````
 
 ### **Notes**
