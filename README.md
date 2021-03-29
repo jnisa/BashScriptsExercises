@@ -4,6 +4,10 @@ The intention of this repository is to set a playground to bash scripting. The g
 
 Many of the concepts and exercises will be collected from the following link: https://tldp.org/LDP/Bash-Beginners-Guide/html/
 
+**Author:** `João Nisa`
+
+**Last Update:** `29/03/2021` 
+
 ### **Exercises**
 
 #### &nbsp;&nbsp;&nbsp;&nbsp; **1. Hello World**
@@ -83,9 +87,11 @@ The solution must comprise the following steps:
 Example of what was stated above:
 `````
 BashScriptExercises % inputArray=(1 2 3 4 5 6)
-BashScriptExercises % ./pick_even.sh $inputArray
-(2 4 6)
+BashScriptExercises % ./pick_even.sh "${inputArray[@]}"
+2 4 6
 `````
+
+**Note:** The solution can be found in the `PickEven` folder.
 
 ### **Notes**
 

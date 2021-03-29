@@ -1,7 +1,16 @@
-testArray=( 1 2 3 4 5 6 )
+# get the input array of the shell script
+inputArray=("$@")
 
-for i in "${testArray[@]}"
+# declare an empty array for the output
+declare -a ansArray=()
+
+# loop to select the even numbers only
+for i in "${inputArray[@]}"
 do
- echo $i
- sh /Users/jnisa/Desktop/Projects/BashScriptsExercises/IsInteger/is_integer.sh $1 
+    if [[ $i =~ ^[0-9]+$ ]] && [[ $((i%2)) -eq 0 ]] 
+    then
+        ansArray+=( $i )
+    fi
 done
+
+echo ${ansArray[@]}
