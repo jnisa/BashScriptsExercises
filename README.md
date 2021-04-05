@@ -93,6 +93,19 @@ BashScriptExercises % ./pick_even.sh "${inputArray[@]}"
 
 **Note:** The solution can be found in the `PickEven` folder.
 
+#### &nbsp;&nbsp;&nbsp;&nbsp; **6. Basic Calculator**
+
+The goal of this exercise is to built a calculator that receives 2 input values and returns the result of the four basic aritmetic operations (addition, subtraction, multiplication and division).
+
+The interaction with this bash script must be something like:
+````
+BashScriptExercises % ./basic_calculator 1 2
+The result of the addition is: 3
+The result of the subtraction is: -1
+The result of the multiplication is: 2
+The result of the division is: 0.5
+````
+
 ### **Notes**
 
 #### &nbsp;&nbsp;&nbsp;&nbsp; **a. Comparisons**
