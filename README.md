@@ -6,7 +6,7 @@ Many of the concepts and exercises will be collected from the following link: ht
 
 **Author:** `João Nisa`
 
-**Last Update:** `29/03/2021` 
+**Last Update:** `05/04/2021` 
 
 ### **Exercises**
 
@@ -105,6 +105,16 @@ The result of the subtraction is: -1
 The result of the multiplication is: 2
 The result of the division is: 0.5
 ````
+
+You must take into account the following specifications:
+- There must be a verification of the inputs, regarding their data type, if they are not integers an error message must be shown;
+- The script must receive two input values, not more, not less. If two input values are not provided to the bash script, an error messages must also be shown.
+
+**Note:** The solution can be found in the `BasicCalculator` folder.
+
+#### &nbsp;&nbsp;&nbsp;&nbsp; **7. `init` Script**
+
+Add a description here...
 
 ### **Notes**
 
